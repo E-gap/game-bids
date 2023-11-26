@@ -1,10 +1,10 @@
-import css from "./FirstGameRandom.module.css";
+import css from "./FirstGameWin.module.css";
 import Button from "../Button/Button";
 import { useState } from "react";
 import BallsList from "../BallsList/BallsList";
 import Notiflix from "notiflix";
 
-const FirstGameRandom = () => {
+const FirstGameWin = () => {
   const [chosenColor, setChosenColor] = useState(null);
   const balls = ["green", "yellow", "red", "blue", "pink"];
   const durations = [6500, 7000, 7500, 8000, 8500];
@@ -36,7 +36,7 @@ const FirstGameRandom = () => {
 
   return (
     <div className={css.firstGame}>
-      <h1>Game random results</h1>
+      <h1>Game always Win</h1>
       <Button text="start" handleButton={startGame} view="start_game" />
       <BallsList
         balls={balls}
@@ -48,4 +48,4 @@ const FirstGameRandom = () => {
   );
 };
 
-export default FirstGameRandom;
+export default FirstGameWin;
