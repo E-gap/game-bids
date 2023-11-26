@@ -1,4 +1,4 @@
-import css from "./FirstGame.module.css";
+import css from "./FirstGameRandom.module.css";
 import Button from "../Button/Button";
 import { useState } from "react";
 import BallsList from "../BallsList/BallsList";
@@ -36,6 +36,7 @@ const FirstGame = () => {
 
   return (
     <div className={css.firstGame}>
+      <h1>Game random results</h1>
       <Button text="start" handleButton={startGame} view="start_game" />
       <BallsList
         balls={balls}

@@ -1,11 +1,11 @@
 import Container from "./Container/Container";
-import FirstGame from "./FirstGame/FirstGame";
+import FirstGameRandom from "./FirstGameRandom/FirstGameRandom";
 
 function App() {
   return (
     <>
       <Container>
-        <FirstGame />
+        <FirstGameRandom />
       </Container>
     </>
   );

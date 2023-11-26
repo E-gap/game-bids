@@ -17,3 +17,8 @@ ul {
   margin: 0;
   list-style: none;
 }
+
+h1 {
+  text-align: center;
+  color: green;
+}
