@@ -1,0 +1,12 @@
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.ballItem {
+  border: 1px solid green;
+}
+
+.ballItem:not(:last-child) {
+  margin-bottom: 10px;
+}

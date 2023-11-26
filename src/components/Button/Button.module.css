@@ -1,0 +1,21 @@
+button {
+  cursor: pointer;
+  border: 2px solid green;
+  background-color: #f0f8ff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover,
+button:focus {
+  background-color: #006400;
+  color: black;
+  border: 2px solid #ff0000;
+  outline: none;
+}
+
+.start_game {
+  margin-bottom: 10px;
+}

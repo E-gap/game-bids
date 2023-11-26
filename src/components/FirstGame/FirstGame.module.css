@@ -1,0 +1,8 @@
+.firstGame {
+  background-color: white;
+}
+
+.ballList {
+  list-style: none;
+  border: 1px solid blue;
+}
