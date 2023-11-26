@@ -13,13 +13,11 @@
   height: 50px;
   border-radius: 50%;
   position: absolute;
+  animation-fill-mode: both;
 }
 
 .green {
   animation-name: greenAnimation;
-  animation-duration: 6000ms;
-  animation-direction: alternate;
-  animation-fill-mode: both;
 }
 
 @keyframes greenAnimation {
@@ -52,9 +50,6 @@
 
 .yellow {
   animation-name: yellowAnimation;
-  animation-duration: 6500ms;
-  animation-direction: alternate;
-  animation-fill-mode: both;
 }
 
 @keyframes yellowAnimation {
@@ -87,9 +82,6 @@
 
 .red {
   animation-name: redAnimation;
-  animation-duration: 7000ms;
-  animation-direction: alternate;
-  animation-fill-mode: both;
 }
 
 @keyframes redAnimation {
@@ -122,9 +114,6 @@
 
 .blue {
   animation-name: blueAnimation;
-  animation-duration: 7500ms;
-  animation-direction: alternate;
-  animation-fill-mode: both;
 }
 
 @keyframes blueAnimation {
@@ -157,9 +146,6 @@
 
 .pink {
   animation-name: pinkAnimation;
-  animation-duration: 8000ms;
-  animation-direction: alternate;
-  animation-fill-mode: both;
 }
 
 @keyframes pinkAnimation {
