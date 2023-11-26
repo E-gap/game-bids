@@ -17,7 +17,7 @@
 
 .green {
   animation-name: greenAnimation;
-  animation-duration: 10000ms;
+  animation-duration: 6000ms;
   animation-direction: alternate;
   animation-fill-mode: both;
 }
@@ -29,7 +29,7 @@
   }
 
   20% {
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.53, 0.92, 0.96, 0.64);
   }
 
   40% {
@@ -37,7 +37,7 @@
   }
 
   60% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.59, 0.31, 0.3, 0.75);
   }
 
   80% {
@@ -45,21 +45,21 @@
   }
 
   100% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.59, 0.31, 0.07, 0.42);
     left: 1148px;
   }
 }
 
 .yellow {
   animation-name: yellowAnimation;
-  animation-duration: 8000ms;
+  animation-duration: 6500ms;
   animation-direction: alternate;
   animation-fill-mode: both;
 }
 
 @keyframes yellowAnimation {
   0% {
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.59, 0.31, 0.38, 0.51);
     left: 0px;
   }
 
@@ -72,7 +72,7 @@
   }
 
   60% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.53, 0.92, 0.96, 0.64);
   }
 
   80% {
@@ -80,7 +80,7 @@
   }
 
   100% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.59, 0.31, 0.07, 0.42);
     left: 1148px;
   }
 }
@@ -103,7 +103,7 @@
   }
 
   40% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.59, 0.31, 0.38, 0.51);
   }
 
   60% {
@@ -111,18 +111,18 @@
   }
 
   80% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.53, 0.92, 0.96, 0.64);
   }
 
   100% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.59, 0.31, 0.3, 0.75);
     left: 1148px;
   }
 }
 
 .blue {
   animation-name: blueAnimation;
-  animation-duration: 11000ms;
+  animation-duration: 7500ms;
   animation-direction: alternate;
   animation-fill-mode: both;
 }
@@ -134,7 +134,7 @@
   }
 
   20% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.53, 0.92, 0.96, 0.64);
   }
 
   40% {
@@ -142,7 +142,7 @@
   }
 
   60% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.53, 0.92, 0.96, 0.64);
   }
 
   80% {
@@ -150,21 +150,21 @@
   }
 
   100% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.59, 0.31, 0.3, 0.75);
     left: 1148px;
   }
 }
 
 .pink {
   animation-name: pinkAnimation;
-  animation-duration: 9000ms;
+  animation-duration: 8000ms;
   animation-direction: alternate;
   animation-fill-mode: both;
 }
 
 @keyframes pinkAnimation {
   0% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.59, 0.31, 0.38, 0.51);
     left: 0px;
   }
 
@@ -173,7 +173,7 @@
   }
 
   40% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.59, 0.31, 0.07, 0.42);
   }
 
   60% {
@@ -185,7 +185,7 @@
   }
 
   100% {
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.59, 0.31, 0.3, 0.75);
     left: 1148px;
   }
 }
