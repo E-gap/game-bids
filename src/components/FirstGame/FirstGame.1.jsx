@@ -1,9 +1,9 @@
 import css from "./FirstGame.module.css";
 import Button from "../Button/Button";
-import { useState } from "react";
-import BallsList from "../BallsList/BallsList";
+import OneBall from "../OneBall/OneBall";
+import { useState, useEffect } from "react";
 
-const FirstGame = () => {
+export const FirstGame = () => {
   const [chosenColor, setChosenColor] = useState(null);
   const balls = ["green", "yellow", "red", "blue", "pink"];
   const durations = ["6500ms", "7000ms", "7500ms", "8000ms", "8500ms"];
@@ -15,7 +15,7 @@ const FirstGame = () => {
   };
   const startGame = () => {
     setNumberGame(numberGame + 1);
-    setShuffledDurations(shuffle(durations));
+    console.log(chosenColor);
 
     setTimeout(() => {
       whoIsFirst();
@@ -25,6 +25,10 @@ const FirstGame = () => {
     setChosenColor(e.currentTarget.getAttribute("color"));
   };
 
+  useEffect(() => {
+    setShuffledDurations(shuffle(durations));
+  }, [numberGame]);
+
   const whoIsFirst = () => {
     console.log("first is");
   };
@@ -32,14 +36,17 @@ const FirstGame = () => {
   return (
     <div className={css.firstGame}>
       <Button text="start" handleButton={startGame} view="start_game" />
-      <BallsList
-        balls={balls}
-        shuffledDurations={shuffledDurations}
-        numberGame={numberGame}
-        clickOnBall={ckickOnBall}
-      />
+      <ul className={css.ballList}>
+        {balls.map((item, index) => (
+          <OneBall
+            key={index}
+            color={item}
+            handleClick={ckickOnBall}
+            duration={shuffledDurations[index]}
+          />
+        ))}
+      </ul>
+      <div>{shuffledDurations}</div>
     </div>
   );
 };
-
-export default FirstGame;

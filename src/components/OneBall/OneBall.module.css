@@ -13,7 +13,10 @@
   height: 50px;
   border-radius: 50%;
   position: absolute;
-  animation-fill-mode: both;
+}
+
+.ball:hover {
+  cursor: pointer;
 }
 
 .green {
