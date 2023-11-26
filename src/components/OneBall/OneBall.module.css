@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 
-.green {
+.animation.green {
   animation-name: greenAnimation;
 }
 
@@ -51,7 +51,7 @@
   }
 }
 
-.yellow {
+.animation.yellow {
   animation-name: yellowAnimation;
 }
 
@@ -83,7 +83,7 @@
   }
 }
 
-.red {
+.animation.red {
   animation-name: redAnimation;
 }
 
@@ -115,7 +115,7 @@
   }
 }
 
-.blue {
+.animation.blue {
   animation-name: blueAnimation;
 }
 
@@ -147,7 +147,7 @@
   }
 }
 
-.pink {
+.animation.pink {
   animation-name: pinkAnimation;
 }
 

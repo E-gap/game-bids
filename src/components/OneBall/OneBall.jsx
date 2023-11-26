@@ -1,15 +1,18 @@
 import css from "./OneBall.module.css";
 
-const OneBall = ({ color, handleClick, duration }) => {
+const OneBall = ({ color, handleClick, duration, isAnimation }) => {
   const style = css[color];
+  const animation = isAnimation ? css.animation : null;
   return (
     <li className={css.ballItem}>
       <div
-        className={`${css.ball} ${style}`}
-        style={{ backgroundColor: color, animationDuration: duration }}
+        className={`${animation} ${css.ball} ${style}`}
+        style={{ backgroundColor: color, animationDuration: `${duration}ms` }}
         onClick={handleClick}
         color={color}
-      ></div>
+      >
+        {duration}
+      </div>
     </li>
   );
 };
